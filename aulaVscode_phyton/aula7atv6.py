@@ -11,15 +11,15 @@
 #Verifique se cada caractere é uma vogal (a, e, i, o, u) e conte-as.
 #Imprima o número total de vogais na palavra.
 
-palavra = input('Digite sua palavra: ')
-vogais = 'aeiououAEIOUáéíóúàèìòùÁÉÍÓÚÀÈÌÒÙ'
+palavra = input('Digite sua palavra: ') #Aqui reserva a palavra digitada
+vogais = 'aeiououAEIOUáéíóúàèìòùÁÉÍÓÚÀÈÌÒÙ' # Determinando as vogais como variáveis para conferência
 
-contador_vogais = 0
+contador_vogais = 0 # contador de vogais
 
-for i in palavra:
-    if i in vogais:
-     contador_vogais += 1
+for vogal in palavra: # início de estrutuda de repetição
+    if vogal in vogais: # se vogal estiver dentro de vogais
+     contador_vogais += 1 # então comece a contar, acrescentando +1 a cada vogal encontrada 
 
-print(f'A palavra {palavra} contém {contador_vogais} vogal(is)')
+print(f'A palavra {palavra} contém {contador_vogais} vogal(is)') # imprimir no console quantas vogais a palavra tem
 
 
