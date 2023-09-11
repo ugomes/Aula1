@@ -14,9 +14,9 @@
 palavra = input('Digite sua palavra: ') #Aqui reserva a palavra digitada
 vogais = 'aeiououAEIOUáéíóúàèìòùÁÉÍÓÚÀÈÌÒÙ' # Determinando as vogais como variáveis para conferência
 
-contador_vogais = 0 # contador de vogais
+contador_vogais = 0 # contador de vogais iniciando do zero
 
-for vogal in palavra: # início de estrutuda de repetição
+for vogal in palavra: # início de estrutuda de repetição - Aqui estou falando para ele percorrer a palavra digitada  e procurar a vogal
     if vogal in vogais: # se vogal estiver dentro de vogais
      contador_vogais += 1 # então comece a contar, acrescentando +1 a cada vogal encontrada 
 
